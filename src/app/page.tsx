@@ -1,4 +1,5 @@
-import Hero from '@/components/Hero'; //  Correct Next.js path alias
+import Hero from '@/components/Hero'; 
+import About from '@/components/About';
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
@@ -7,6 +8,7 @@ export default function Home() {
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Hero />
+        <About />
       </div>
     </main>
   );

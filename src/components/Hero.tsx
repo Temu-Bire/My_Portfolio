@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex min-h-[90vh] flex-col justify-center py-20">
+    <section id="hero" className="flex min-h-[50vh] flex-col justify-center py-5">
       <div className="space-y-6 max-w-3xl">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
           Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Temesgen Birhenu</span>
