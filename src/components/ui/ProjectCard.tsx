@@ -9,18 +9,7 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const categoryColors: Record<string, string> = {
-    "Full Stack": "bg-indigo-50 text-indigo-700 border-indigo-200/70",
-    AI: "bg-purple-50 text-purple-700 border-purple-200/70",
-    Mobile: "bg-emerald-50 text-emerald-700 border-emerald-200/70",
-    Backend: "bg-amber-50 text-amber-700 border-amber-200/70",
-    Web: "bg-sky-50 text-sky-700 border-sky-200/70",
-    DevOps: "bg-slate-100 text-slate-700 border-slate-200/70",
-  };
-
-  const badgeColor =
-    categoryColors[project.category] ||
-    "bg-slate-100 text-slate-700 border-slate-200/70";
+ 
 
   return (
     <article className="group flex flex-col h-full bg-white rounded-xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all duration-200 hover:-translate-y-1 overflow-hidden">
@@ -43,16 +32,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               Project Preview
             </span>
           </div>
-        )}
-
-        {/* Category Pill Tag Overlay */}
-        <div className="absolute top-3 right-3 z-10">
-          <span
-            className={`inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold border ${badgeColor} backdrop-blur-xs shadow-2xs`}
-          >
-            {project.category}
-          </span>
-        </div>
+        )}        
       </div>
 
       {/* Body Content */}
