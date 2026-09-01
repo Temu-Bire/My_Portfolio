@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Temu Bire | Computer Science Student & Full-Stack Developer",
+  title: "Temesgen Birhenu | Computer Science Student & Full-Stack Developer",
   description:
     "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building full-stack web, mobile, and AI-powered applications.",
   keywords: [
