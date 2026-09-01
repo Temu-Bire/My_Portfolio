@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#f8fafc"/>
+  <rect width="800" height="450" fill="url(#bg1)"/>
+  <rect x="60" y="50" width="680" height="340" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="60" y="50" width="680" height="40" rx="12" fill="#f1f5f9"/>
+  <circle cx="85" cy="70" r="5" fill="#ef4444"/>
+  <circle cx="102" cy="70" r="5" fill="#eab308"/>
+  <circle cx="119" cy="70" r="5" fill="#22c55e"/>
+  <rect x="150" y="60" width="300" height="20" rx="6" fill="#e2e8f0"/>
+  <!-- UI Mockup inside -->
+  <rect x="90" y="115" width="180" height="240" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="110" y="135" width="140" height="14" rx="4" fill="#cbd5e1"/>
+  <rect x="110" y="160" width="100" height="10" rx="3" fill="#e2e8f0"/>
+  <rect x="110" y="180" width="120" height="10" rx="3" fill="#e2e8f0"/>
+  <rect x="110" y="210" width="140" height="32" rx="6" fill="#4f46e5"/>
+  <rect x="290" y="115" width="420" height="110" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <rect x="315" y="135" width="220" height="16" rx="4" fill="#0f172a"/>
+  <rect x="315" y="165" width="350" height="10" rx="3" fill="#94a3b8"/>
+  <rect x="315" y="185" width="280" height="10" rx="3" fill="#cbd5e1"/>
+  <rect x="290" y="245" width="420" height="110" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#64748b" text-anchor="middle">CampusConnect Full-Stack Platform</text>
+</svg>

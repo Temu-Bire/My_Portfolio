@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#fdf4ff"/>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <rect x="60" y="50" width="680" height="340" rx="12" fill="#ffffff" stroke="#e9d5ff" stroke-width="2"/>
+  <rect x="60" y="50" width="680" height="40" rx="12" fill="#faf5ff"/>
+  <circle cx="85" cy="70" r="5" fill="#f43f5e"/>
+  <circle cx="102" cy="70" r="5" fill="#f59e0b"/>
+  <circle cx="119" cy="70" r="5" fill="#10b981"/>
+  <!-- Chat and AI prompt layout -->
+  <rect x="90" y="115" width="400" height="65" rx="10" fill="#f3e8ff"/>
+  <circle cx="120" cy="147" r="16" fill="#9333ea"/>
+  <rect x="150" y="137" width="220" height="10" rx="3" fill="#6b21a8"/>
+  <rect x="150" y="153" width="160" height="8" rx="3" fill="#a855f7"/>
+  <rect x="250" y="195" width="460" height="85" rx="10" fill="#f1f5f9"/>
+  <circle cx="680" cy="237" r="16" fill="#64748b"/>
+  <rect x="275" y="217" width="380" height="10" rx="3" fill="#334155"/>
+  <rect x="275" y="235" width="320" height="8" rx="3" fill="#64748b"/>
+  <rect x="275" y="253" width="200" height="8" rx="3" fill="#94a3b8"/>
+  <rect x="90" y="300" width="620" height="55" rx="8" fill="#faf5ff" stroke="#d8b4fe"/>
+  <rect x="110" y="318" width="260" height="16" rx="4" fill="#a855f7"/>
+  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#7e22ce" text-anchor="middle">AI Study &amp; Research Assistant</text>
+</svg>
