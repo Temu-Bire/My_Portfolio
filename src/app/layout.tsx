@@ -13,17 +13,53 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-   title: "Temesgen Birhenu | Full-Stack & Mobile Software Engineer",
-  description: "My personal portfolio website",
+  title: "Temu Bire | Computer Science Student & Full-Stack Developer",
+  description:
+    "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building full-stack web, mobile, and AI-powered applications.",
+  keywords: [
+    "Temu Bire",
+    "Computer Science",
+    "Full-Stack Developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "FastAPI",
+    "Python",
+    "React Native",
+    "AI Applications",
+  ],
+  authors: [{ name: "Temu Bire" }],
+  creator: "Temu Bire",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://temubire.dev",
+    title: "Temu Bire | Computer Science Student & Full-Stack Developer",
+    description:
+      "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building practical software across web, mobile, and AI.",
+    siteName: "Temu Bire Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Temu Bire | Computer Science Student & Full-Stack Developer",
+    description:
+      "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building full-stack web, mobile, and AI-powered applications.",
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-indigo-600 selection:text-white">
+        {children}
+      </body>
     </html>
   );
 }
