@@ -47,9 +47,7 @@ export function Contact() {
   return (
     <section id="contact" aria-label="Contact" className="py-16 md:py-24 border-t border-slate-200/80">
       <SectionHeading
-        badge="Get in Touch"
-        title="Let's Build Something Useful"
-        subtitle="I'm always interested in learning, building meaningful software, and connecting with people working on interesting technical problems. If you'd like to discuss a project, collaboration, or opportunity, feel free to reach out."
+        title="Get in Touch"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl mx-auto">
@@ -103,10 +101,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="p-4 rounded-xl bg-indigo-50/60 border border-indigo-100 text-xs text-indigo-900">
-            <span className="font-bold block mb-1">Looking for opportunities:</span>
-            Available for software engineering internships, junior developer roles, and open-source collaborations.
-          </div>
+          
         </div>
 
         {/* Right Column: Contact Form */}

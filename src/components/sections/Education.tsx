@@ -11,11 +11,9 @@ import { Button } from "@/components/ui/Button";
 
 export function Education() {
   return (
-    <section id="education" aria-label="Education & Credentials" className="py-16 md:py-24 border-t border-slate-200/80">
+    <section id="education" aria-label="Education" className="py-16 md:py-24 border-t border-slate-200/80">
       <SectionHeading
-        badge="Credentials"
-        title="Education &amp; Certification"
-        subtitle="Academic foundations in Computer Science complemented by intensive industry-standard software engineering training."
+        title="Education "
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -77,11 +75,6 @@ export function Education() {
                   ))}
                 </ul>
               </div>
-            </div>
-
-            <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500 italic">
-              * University and graduation date details can be customized in{" "}
-              <code>src/data/education.ts</code>
             </div>
           </div>
         ))}

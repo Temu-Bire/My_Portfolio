@@ -37,18 +37,10 @@ export function Hero() {
         {/* Left Column: Text & CTAs */}
         <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
           {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200/60 shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse" />
-            <span>4th-Year CS Student · Full-Stack &amp; AI Developer</span>
-          </div>
-
+      
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
-            Building practical software with{" "}
-            <span className="text-indigo-600">code, curiosity,</span> and{" "}
-            <span className="text-slate-900 underline decoration-indigo-300 decoration-wavy decoration-2">
-              Computer Science.
-            </span>
+            <span className="text-indigo-600"> Full-Stack Developer </span> 
           </h1>
 
           {/* Bio Summary */}

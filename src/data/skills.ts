@@ -46,10 +46,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "Data Structures & Algorithms",
       "Software Engineering Fundamentals",
-      "Python",
-      "Machine Learning Fundamentals",
-      "AI APIs & Integration",
-      "AI-Powered Applications",
+      "Computer Programming ",
+      "Ai and Machine Learning ",
+      "Networking and Security",
     ],
   },
 ];

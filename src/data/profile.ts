@@ -1,9 +1,8 @@
 import { SocialLink } from "@/types";
 
 export const profileData = {
-  name: "Temu Bire",
-  role: "4th-Year Computer Science Student | Full-Stack Developer | AI Application Developer",
-  headline: "Building practical software with code, curiosity, and Computer Science.",
+  name: "Temesgen Birhenu",
+  role: "Full-Stack Developer",
   heroSummary:
     "I’m Temu Bire, a fourth-year Computer Science student and developer with 3 years of coding experience. I build full-stack web and mobile applications and explore AI-powered solutions to real-world problems.",
   aboutParagraphs: [
@@ -20,10 +19,7 @@ export const profileData = {
       value: "3+",
       label: "Years Coding Experience",
     },
-    {
-      value: "6+",
-      label: "Featured Projects",
-    },
+  
     {
       value: "Full Stack",
       label: "Web & Mobile Development",
@@ -38,17 +34,17 @@ export const profileData = {
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/YOUR_USERNAME",
+      url: "https://linkedin.com/in/temesgen-birhenu-720323340/",
       icon: "linkedin",
       label: "LinkedIn Profile",
     },
     {
       name: "Email",
-      url: "mailto:temubire@example.com",
+      url: "mailto:temubre1996@gmail.com",
       icon: "mail",
       label: "Email Address",
     },
   ] satisfies SocialLink[],
-  email: "temubire@example.com",
+  email: "temubre1996@gmail.com",
   photoPath: "/profile.jpg",
 };

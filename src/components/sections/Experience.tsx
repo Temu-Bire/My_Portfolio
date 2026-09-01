@@ -5,11 +5,9 @@ import { CheckCircleIcon, CodeIcon } from "@/components/ui/Icons";
 
 export function Experience() {
   return (
-    <section id="experience" aria-label="Experience & Journey" className="py-16 md:py-24 border-t border-slate-200/80">
+    <section id="experience" aria-label="Experience " className="py-16 md:py-24 border-t border-slate-200/80">
       <SectionHeading
-        badge="Development Journey"
-        title="Experience &amp; Project Track Record"
-        subtitle="3+ years of continuous hands-on software development across university coursework, personal engineering builds, and collaborative technical projects."
+        title="Experience "
       />
 
       <div className="max-w-4xl mx-auto space-y-8">

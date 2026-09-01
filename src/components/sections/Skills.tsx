@@ -68,9 +68,7 @@ export function Skills() {
   return (
     <section id="skills" aria-label="Skills" className="py-16 md:py-24 border-t border-slate-200/80">
       <SectionHeading
-        badge="Technical Toolkit"
         title="Skills &amp; Technologies"
-        subtitle="Practical tools and technologies I use across full-stack, mobile, and AI application development."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">

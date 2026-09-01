@@ -14,7 +14,6 @@ export interface Project {
   problemSolved: string;
   image?: string;
   technologies: string[];
-  category: "Full Stack" | "Web" | "Mobile" | "AI" | "Backend" | "DevOps";
   githubUrl: string;
   liveUrl?: string;
   caseStudyUrl?: string;

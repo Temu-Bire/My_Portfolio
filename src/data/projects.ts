@@ -2,87 +2,114 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    id: "campus-connect",
-    title: "CampusConnect Platform",
+    id: "secure-auth-system",
+    title: "Secure Authentication System",
     description:
-      "A full-stack collaborative platform enabling university students to exchange peer tutoring notes, schedule study groups, and share departmental resources.",
+      "A full-stack authentication system with modern security and account protection features.",
     problemSolved:
-      "Solves fragmented communication channels across university courses by centralizing verified academic resources and peer study sessions in a single responsive web portal.",
+      "Provides secure user authentication with protection against common account and login threats.",
     image: "/projects/project-1.svg",
-    technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
-    category: "Full Stack",
-    githubUrl: "https://github.com/YOUR_USERNAME/campus-connect",
-    liveUrl: "https://campus-connect-demo.vercel.app",
+    technologies: ["React", "FastAPI", "Supabase", "PostgreSQL", "Tailwind CSS"],
+    githubUrl: "https://github.com/YOUR_USERNAME/secure-auth-system",
+    liveUrl: "https://secure-auth-demo.vercel.app",
     featured: true,
   },
+
   {
-    id: "ai-study-assistant",
-    title: "AI Study & Research Assistant",
+    id: "sync-write",
+    title: "SyncWrite",
     description:
-      "An intelligent study companion that extracts key concepts from lecture notes, generates targeted practice quizzes, and explains complex CS topics step-by-step.",
+      "A real-time collaborative document editor where multiple users can edit and collaborate on documents simultaneously.",
     problemSolved:
-      "Automates review material generation from raw course slides and markdown notes using structured AI embeddings and prompt-engineered synthesis.",
+      "Enables teams to write and edit shared documents in real time without manual syncing.",
     image: "/projects/project-2.svg",
-    technologies: ["Python", "FastAPI", "React", "Next.js", "AI APIs", "Tailwind CSS"],
-    category: "AI",
-    githubUrl: "https://github.com/YOUR_USERNAME/ai-study-assistant",
-    liveUrl: "https://ai-study-assistant-demo.vercel.app",
+    technologies: [
+      "React",
+      "Node.js",
+      "Socket.IO",
+      "Tiptap",
+      "Yjs",
+      "MongoDB",
+    ],
+    githubUrl: "https://github.com/YOUR_USERNAME/sync-write",
+    liveUrl: "https://sync-write-demo.vercel.app",
     featured: true,
   },
+
   {
-    id: "devpulse-mobile",
-    title: "DevPulse Mobile Tracker",
+    id: "expense-tracker",
+    title: "Expense Tracker",
     description:
-      "A cross-platform mobile application for tracking daily coding habits, problem-solving streaks, and technical reading goals with offline-first synchronization.",
+      "A mobile app for recording, organizing, and tracking personal expenses with a simple and intuitive interface.",
     problemSolved:
-      "Helps early-career engineers build consistent daily practice through intuitive visual milestones and local SQLite persistence with cloud backup.",
+      "Helps users monitor their spending and understand where their money goes.",
     image: "/projects/project-3.svg",
-    technologies: ["React Native", "Expo", "TypeScript", "Tailwind CSS (NativeWind)"],
-    category: "Mobile",
-    githubUrl: "https://github.com/YOUR_USERNAME/devpulse-mobile",
-    liveUrl: "https://expo.dev/@YOUR_USERNAME/devpulse-mobile",
+    technologies: ["React Native", "Expo", "TypeScript", "Zustand"],
+    githubUrl: "https://github.com/YOUR_USERNAME/expense-tracker",
+    liveUrl: "https://expo.dev/@YOUR_USERNAME/expense-tracker",
     featured: true,
   },
+
   {
-    id: "cloudscale-api",
-    title: "FastAPI Resource Hub Engine",
+    id: "job-match",
+    title: "Job Application Portal",
     description:
-      "A modular, containerized REST API with JWT authentication, rate limiting, and role-based access control for content curation and user management.",
+      "A job-matching platform connecting job seekers with relevant opportunities based on their skills and interests.",
     problemSolved:
-      "Provides a clean, scalable backend architecture for multi-tenant web applications with automated schema validation and database migrations.",
+      "Helps job seekers discover suitable opportunities while helping employers find relevant candidates.",
     image: "/projects/project-4.svg",
-    technologies: ["FastAPI", "Python", "PostgreSQL", "Docker", "SQLAlchemy"],
-    category: "Backend",
-    githubUrl: "https://github.com/YOUR_USERNAME/fastapi-resource-engine",
-    liveUrl: "https://fastapi-resource-engine.onrender.com/docs",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/YOUR_USERNAME/job-match",
+    liveUrl: "#",
     featured: true,
   },
+
   {
-    id: "algo-visualizer",
-    title: "Algorithm & Data Structure Visualizer",
+    id: "weather-intelligence",
+    title: "Weather Intelligence System",
     description:
-      "An interactive web tool demonstrating sorting, pathfinding (Dijkstra, A*), and graph traversal algorithms with step-by-step time complexity breakdowns.",
+      "A weather intelligence system that collects, validates, stores, and analyzes weather data to provide structured insights from historical and current weather information.",
     problemSolved:
-      "Makes abstract Computer Science algorithms intuitive through real-time state visualization and adjustable execution speeds for educational understanding.",
+      "Transforms raw weather data into reliable, structured information that can help users understand weather conditions, trends, and historical patterns.",
     image: "/projects/project-5.svg",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Data Structures & Algorithms"],
-    category: "Web",
-    githubUrl: "https://github.com/YOUR_USERNAME/algo-visualizer",
-    liveUrl: "https://algo-visualizer-demo.vercel.app",
+    technologies: [
+      "Python",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Pydantic",
+    ],
+    githubUrl: "https://github.com/YOUR_USERNAME/weather-intelligence",
+    liveUrl: "#",
     featured: true,
   },
+
   {
-    id: "devops-cicd-pipeline",
-    title: "Automated CI/CD & Health Monitor",
+    id: "ai-integrated-ecommerce",
+    title: "AI-Integrated E-Commerce Platform",
     description:
-      "A containerized deployment pipeline with automated testing, Docker build verification, and a lightweight dashboard monitoring server health metrics.",
+      "A full-stack e-commerce platform enhanced with AI-powered features using Retrieval-Augmented Generation (RAG) to provide intelligent product assistance and context-aware user interactions.",
     problemSolved:
-      "Streamlines code quality checks, prevents broken builds from reaching staging environments, and provides real-time HTTP endpoint uptime telemetry.",
+      "Improves the online shopping experience by combining traditional e-commerce functionality with AI-powered product discovery and intelligent assistance.",
     image: "/projects/project-6.svg",
-    technologies: ["Docker", "GitHub Actions", "Node.js", "Express", "CI/CD"],
-    category: "DevOps",
-    githubUrl: "https://github.com/YOUR_USERNAME/devops-ci-pipeline",
-    liveUrl: "https://YOUR-LIVE-DEMO.com",
+    technologies: [
+      "React",
+      "FastAPI",
+      "Python",
+      "PostgreSQL",
+      "RAG",
+      "AI",
+      "REST API",
+    ],
+    githubUrl:
+      "https://github.com/Temu-Bire/Ai_integrated_ecommerse_website",
+    liveUrl: "#",
     featured: true,
   },
 ];
