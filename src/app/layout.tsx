@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building full-stack web, mobile, and AI-powered applications.",
   keywords: [
-    "Temu Bire",
+    "Temesgen Birhenu",
     "Computer Science",
     "Full-Stack Developer",
     "React",
@@ -28,22 +28,19 @@ export const metadata: Metadata = {
     "React Native",
     "AI Applications",
   ],
-  authors: [{ name: "Temu Bire" }],
-  creator: "Temu Bire",
+  authors: [{ name: "Temesgon birhenu" }],
+  creator: "Temesgen Birhenu",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://temubire.dev",
-    title: "Temu Bire | Computer Science Student & Full-Stack Developer",
+    url: "https://my-portfolio-temubre1996-8124s-projects.vercel.app/",
+    title: "Temesgen Birhenu | Computer Science Student & Full-Stack Developer",
     description:
-      "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building practical software across web, mobile, and AI.",
-    siteName: "Temu Bire Portfolio",
+      "Portfolio of Temesgen Birhenu, a fourth-year Computer Science student and developer building practical software across web, mobile, and AI.",
+    siteName: "Temesgen Birhenu Portfolio",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Temu Bire | Computer Science Student & Full-Stack Developer",
-    description:
-      "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building full-stack web, mobile, and AI-powered applications.",
+  verification: {
+    google: '6Fi4x7I0YP-l4fdSbDKf9fRz79l87tRKbEe2_R9srmQ',
   },
 };
 
@@ -57,7 +54,6 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <meta name="google-site-verification" content="6Fi4x7I0YP-l4fdSbDKf9fRz79l87tRKbEe2_R9srmQ" />
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-indigo-600 selection:text-white">
         {children}
       </body>
