@@ -31,8 +31,8 @@ export const projects: Project[] = [
       "Yjs",
       "MongoDB",
     ],
-    githubUrl: "https://github.com/YOUR_USERNAME/sync-write",
-    liveUrl: "https://sync-write-demo.vercel.app",
+    githubUrl: "https://github.com/Temu-Bire/Real_Time_Collaborative_Document_Editor.git",
+    liveUrl: "https://real-time-collaborative-document-editor-2-zo09.onrender.com",
     featured: true,
   },
 
