@@ -1,49 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+<svg viewBox="0 0 500 310" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Segoe UI, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpkYjYzOTM0ZC03ZDRhLTQyYTYtOTUxZi03MmIwZjc2ZWE1MWUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKU1Fp4dwtlNN0A35Tdm4CsAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpiYzE0YzllOS1iYzExLTRkYmEtOTdmYi1mMWI1MGRmZjA0NGVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoGPRunO5xjK1Pd2RXgOCASwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggTdL8dQ3LMOma3yzEuKnBDGyX7xDm1acg4MDrijMqUC2kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaEnEGD/9wFbJPyDpFMmiQRQAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCfD03alW/tr1GoDzPs1K272TuaoC44fg0mWsXPf+rIk2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiuZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmRiNjM5MzRkLTdkNGEtNDJhNi05NTFmLTcyYjBmNzZlYTUxZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjBhNDBkYWU5LTNlNjEtNDk1Yi1iNzkzLTJkMjU4MzViZjczZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBN0vx1Dcsw6ZrfLMS4qcEMbJfvEObVpyDgwOuKMypQLaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggZFDgp9V6OesI9oRyrM28eUtohsQ+6bH9Upa16cIv4EOiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggbUiHjKqhZqtTLeJ79PE4BeIgmj7EJA4DD6GvD61ZYKZ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHKNROKR12vSmOv2etmiaxG+aMVgxD5RjPVE2oJjvmbehlxKSOXqxsOxFEhjdic+LdguE8mQNbnQWKVvj1mnZp0=</c2pa:manifest></metadata>
   <defs>
-    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#475569" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#334155" stop-opacity="0.18"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DDF7F2"/>
+      <stop offset="1" stop-color="#C6EFE6"/>
     </linearGradient>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F766E" flood-opacity="0.18"/>
+    </filter>
   </defs>
-  <rect width="800" height="450" fill="#f8fafc"/>
-  <rect width="800" height="450" fill="url(#bg6)"/>
-  <!-- Pipeline Terminal & Pipeline Stages -->
-  <rect x="60" y="50" width="680" height="340" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-  <rect x="60" y="50" width="680" height="36" rx="12" fill="#1e293b"/>
-  <circle cx="85" cy="68" r="5" fill="#ef4444"/>
-  <circle cx="102" cy="68" r="5" fill="#eab308"/>
-  <circle cx="119" cy="68" r="5" fill="#22c55e"/>
-  <text x="400" y="73" font-family="monospace" font-size="12" fill="#94a3b8" text-anchor="middle">ci-cd-pipeline-runner // health-monitor:active</text>
 
-  <!-- CI Pipeline steps -->
-  <rect x="90" y="110" width="120" height="70" rx="8" fill="#1e293b" stroke="#22c55e"/>
-  <text x="150" y="138" font-family="sans-serif" font-size="12" font-weight="bold" fill="#22c55e" text-anchor="middle">✓ LINT</text>
-  <text x="150" y="158" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">0 errors</text>
+  <rect width="500" height="310" fill="url(#bg)"/>
 
-  <line x1="210" y1="145" x2="250" y2="145" stroke="#22c55e" stroke-width="2"/>
+  <!-- Window -->
+  <rect x="10" y="22" width="480" height="254" rx="10" fill="#fff" filter="url(#sh)"/>
+  <path d="M10 32a10 10 0 0 1 10-10h460a10 10 0 0 1 10 10v24H10z" fill="#F0FDFA"/>
+  <circle cx="26" cy="39" r="4" fill="#F43F5E"/>
+  <circle cx="40" cy="39" r="4" fill="#F59E0B"/>
+  <circle cx="54" cy="39" r="4" fill="#10B981"/>
 
-  <rect x="250" y="110" width="120" height="70" rx="8" fill="#1e293b" stroke="#22c55e"/>
-  <text x="310" y="138" font-family="sans-serif" font-size="12" font-weight="bold" fill="#22c55e" text-anchor="middle">✓ TEST</text>
-  <text x="310" y="158" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">24 passed</text>
+  <!-- Cart pill -->
+  <rect x="392" y="30" width="84" height="18" rx="9" fill="#CCFBF1"/>
+  <text x="434" y="42.5" font-size="9.5" font-weight="600" fill="#115E59" text-anchor="middle">Cart · 2 items</text>
 
-  <line x1="370" y1="145" x2="410" y2="145" stroke="#22c55e" stroke-width="2"/>
+  <!-- Product card 1 (AI pick) -->
+  <rect x="26" y="66" width="122" height="94" rx="8" fill="#fff" stroke="#0D9488" stroke-width="1.8"/>
+  <rect x="32" y="72" width="110" height="48" rx="6" fill="#CCFBF1"/>
+  <circle cx="87" cy="98" r="14" fill="#14B8A6"/>
+  <circle cx="87" cy="98" r="6" fill="#CCFBF1"/>
+  <rect x="88" y="76" width="50" height="14" rx="7" fill="#0D9488"/>
+  <text x="113" y="86" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">AI pick</text>
+  <rect x="36" y="126" width="70" height="6" rx="3" fill="#134E4A"/>
+  <rect x="36" y="138" width="40" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="104" y="136" width="34" height="14" rx="7" fill="#0D9488"/>
+  <text x="121" y="146" font-size="7.5" font-weight="600" fill="#fff" text-anchor="middle">Add</text>
 
-  <rect x="410" y="110" width="120" height="70" rx="8" fill="#1e293b" stroke="#22c55e"/>
-  <text x="470" y="138" font-family="sans-serif" font-size="12" font-weight="bold" fill="#22c55e" text-anchor="middle">✓ DOCKER</text>
-  <text x="470" y="158" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">built: 12.4s</text>
+  <!-- Product card 2 -->
+  <rect x="158" y="66" width="122" height="94" rx="8" fill="#fff" stroke="#CCFBF1"/>
+  <rect x="164" y="72" width="110" height="48" rx="6" fill="#FEF3C7"/>
+  <rect x="201" y="84" width="36" height="26" rx="6" fill="#F59E0B"/>
+  <rect x="168" y="126" width="64" height="6" rx="3" fill="#134E4A"/>
+  <rect x="168" y="138" width="40" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="236" y="136" width="34" height="14" rx="7" fill="#0D9488"/>
+  <text x="253" y="146" font-size="7.5" font-weight="600" fill="#fff" text-anchor="middle">Add</text>
 
-  <line x1="530" y1="145" x2="570" y2="145" stroke="#22c55e" stroke-width="2"/>
+  <!-- Product card 3 -->
+  <rect x="26" y="170" width="122" height="94" rx="8" fill="#fff" stroke="#CCFBF1"/>
+  <rect x="32" y="176" width="110" height="48" rx="6" fill="#E0E7FF"/>
+  <polygon points="87,184 105,214 69,214" fill="#6366F1"/>
+  <rect x="36" y="230" width="60" height="6" rx="3" fill="#134E4A"/>
+  <rect x="36" y="242" width="40" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="104" y="240" width="34" height="14" rx="7" fill="#0D9488"/>
+  <text x="121" y="250" font-size="7.5" font-weight="600" fill="#fff" text-anchor="middle">Add</text>
 
-  <rect x="570" y="110" width="140" height="70" rx="8" fill="#1e293b" stroke="#38bdf8"/>
-  <text x="640" y="138" font-family="sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">🚀 DEPLOY</text>
-  <text x="640" y="158" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">healthy 99.9%</text>
+  <!-- Product card 4 -->
+  <rect x="158" y="170" width="122" height="94" rx="8" fill="#fff" stroke="#CCFBF1"/>
+  <rect x="164" y="176" width="110" height="48" rx="6" fill="#FCE7F3"/>
+  <circle cx="219" cy="200" r="13" fill="#EC4899"/>
+  <rect x="168" y="230" width="66" height="6" rx="3" fill="#134E4A"/>
+  <rect x="168" y="242" width="40" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="236" y="240" width="34" height="14" rx="7" fill="#0D9488"/>
+  <text x="253" y="250" font-size="7.5" font-weight="600" fill="#fff" text-anchor="middle">Add</text>
 
-  <!-- Logs terminal -->
-  <rect x="90" y="210" width="620" height="150" rx="6" fill="#020617" stroke="#1e293b"/>
-  <text x="110" y="240" font-family="monospace" font-size="12" fill="#38bdf8">$ docker run -d -p 8080:8080 app/service:latest</text>
-  <text x="110" y="265" font-family="monospace" font-size="12" fill="#22c55e">[HEALTHCHECK] GET /healthz 200 OK (3ms response)</text>
-  <text x="110" y="290" font-family="monospace" font-size="12" fill="#94a3b8">[METRICS] Memory: 142MB / 512MB | CPU: 1.2%</text>
-  <text x="110" y="315" font-family="monospace" font-size="12" fill="#e2e8f0">[STATUS] All services operational and monitoring telemetry stream.</text>
+  <!-- AI assistant panel -->
+  <rect x="302" y="66" width="172" height="198" rx="10" fill="#F0FDFA" stroke="#99F6E4"/>
+  <circle cx="316" cy="81" r="7" fill="#0D9488"/>
+  <polygon points="316,76 318.2,81 316,86 313.8,81" fill="#fff"/>
+  <text x="328" y="84.5" font-size="10" font-weight="700" fill="#0F766E">AI Assistant</text>
+  <line x1="310" y1="94" x2="466" y2="94" stroke="#99F6E4"/>
 
-  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Automated CI/CD Pipeline &amp; Health Monitor</text>
+  <!-- User bubble -->
+  <rect x="340" y="102" width="126" height="30" rx="8" fill="#fff" stroke="#CBD5E1"/>
+  <rect x="348" y="110" width="100" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="348" y="121" width="70" height="5" rx="2.5" fill="#CBD5E1"/>
+
+  <!-- AI bubble -->
+  <rect x="310" y="140" width="146" height="58" rx="8" fill="#0D9488"/>
+  <rect x="318" y="149" width="124" height="5" rx="2.5" fill="#fff" opacity="0.9"/>
+  <rect x="318" y="159" width="104" height="5" rx="2.5" fill="#fff" opacity="0.8"/>
+  <rect x="318" y="169" width="80" height="5" rx="2.5" fill="#fff" opacity="0.6"/>
+  <rect x="318" y="180" width="48" height="12" rx="6" fill="#fff" opacity="0.22"/>
+  <text x="342" y="188.5" font-size="7" font-weight="600" fill="#fff" text-anchor="middle">RAG docs</text>
+  <rect x="370" y="180" width="46" height="12" rx="6" fill="#fff" opacity="0.22"/>
+  <text x="393" y="188.5" font-size="7" font-weight="600" fill="#fff" text-anchor="middle">Reviews</text>
+
+  <!-- Typing dots -->
+  <circle cx="320" cy="214" r="3" fill="#5EEAD4"/>
+  <circle cx="331" cy="214" r="3" fill="#2DD4BF"/>
+  <circle cx="342" cy="214" r="3" fill="#14B8A6"/>
+
+  <!-- Input -->
+  <rect x="310" y="234" width="156" height="22" rx="11" fill="#fff" stroke="#99F6E4"/>
+  <text x="322" y="248" font-size="8" fill="#94A3B8">Ask about a product…</text>
+  <circle cx="454" cy="245" r="7" fill="#0D9488"/>
+  <polygon points="451,242 458,245 451,248 452.5,245" fill="#fff"/>
+
+  <!-- Caption -->
+  <text x="250" y="296" font-size="10.5" font-weight="500" fill="#0F766E" text-anchor="middle">AI-Powered Shopping Assistant</text>
 </svg>

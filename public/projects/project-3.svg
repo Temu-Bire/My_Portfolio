@@ -1,32 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+<svg viewBox="0 0 500 310" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Segoe UI, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4OTc0MDc0NS0yYjQ2LTQxMzktYmU4Ny1hZGQ1Nzc2MjE1NGMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaO+6R0uL/+Y73F+FL5EoP7QAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoyZjMwNmNkNy0yODczLTRjMWYtYmQ4ZC1mMzBmNGY0ZDlmNDdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoSZr78vpzOM8a7nq8CFbGXwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggmq+BJPJYk+h61RE/l30/qU1RiAsNNhGyRP7IKE6nWU2kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKsg6/dw5u9bWALfMRWccV4AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCB4ME2nKxXx24lOrXuWeRoAWQ1DFU67XE9OY+jGQwBKa2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiuZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjg5NzQwNzQ1LTJiNDYtNDEzOS1iZTg3LWFkZDU3NzYyMTU0Yy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjVmMzJiMmFmLWFjZTItNDBiNS1iNTgxLTcxMmZjNzFlODhiZnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCar4Ek8liT6HrVET+XfT+pTVGICw02EbJE/sgoTqdZTaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggfHDcrta08FZVH9eRJCPUEQnoEpuLQmhdiCEtKJdIP4GiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggMYRB2OwtBoj7jiJTWxI8PasAijJLPoe8MigD2KenyLB0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQJzTKcUJS/QxTUqnpqu90LYvLJu5Gh0agqRpYSOJggsaKYEQjcAJm7Jo8u3onU1luEb4WkGQPLHNmdhyGzXFeUI=</c2pa:manifest></metadata>
   <defs>
-    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0.18"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDE7F1"/>
+      <stop offset="1" stop-color="#FBCFE4"/>
     </linearGradient>
+    <filter id="sh" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#9D174D" flood-opacity="0.2"/>
+    </filter>
   </defs>
-  <rect width="800" height="450" fill="#f0fdf4"/>
-  <rect width="800" height="450" fill="url(#bg3)"/>
-  <!-- Phone Frame Mockup -->
-  <rect x="290" y="40" width="220" height="350" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
-  <rect x="360" y="52" width="80" height="12" rx="6" fill="#e2e8f0"/>
-  <!-- Mobile UI Cards -->
-  <rect x="310" y="80" width="180" height="50" rx="10" fill="#dcfce7"/>
-  <rect x="325" y="93" width="90" height="10" rx="3" fill="#15803d"/>
-  <rect x="325" y="109" width="140" height="6" rx="2" fill="#86efac"/>
-  
-  <rect x="310" y="140" width="180" height="65" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
-  <rect x="325" y="155" width="110" height="8" rx="2" fill="#334155"/>
-  <rect x="325" y="170" width="70" height="6" rx="2" fill="#94a3b8"/>
-  <rect x="325" y="185" width="150" height="8" rx="4" fill="#10b981"/>
 
-  <rect x="310" y="215" width="180" height="65" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
-  <rect x="325" y="230" width="100" height="8" rx="2" fill="#334155"/>
-  <rect x="325" y="245" width="60" height="6" rx="2" fill="#94a3b8"/>
-  <rect x="325" y="260" width="150" height="8" rx="4" fill="#38bdf8"/>
+  <rect width="500" height="310" fill="url(#bg)"/>
 
-  <rect x="310" y="290" width="180" height="40" rx="8" fill="#16a34a"/>
-  <rect x="350" y="304" width="100" height="12" rx="4" fill="#ffffff"/>
+  <!-- Phone -->
+  <rect x="175" y="18" width="150" height="264" rx="22" fill="#fff" stroke="#F9A8D4" stroke-width="3" filter="url(#sh)"/>
+  <rect x="225" y="25" width="50" height="8" rx="4" fill="#FCE7F3"/>
 
-  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#15803d" text-anchor="middle">DevPulse Mobile Habit Tracker (React Native &amp; Expo)</text>
+  <text x="189" y="52" font-size="7.5" fill="#9D174D">Total spent</text>
+  <text x="189" y="73" font-size="20" font-weight="700" fill="#831843">$1,248</text>
+  <rect x="268" y="42" width="44" height="14" rx="7" fill="#FCE7F3"/>
+  <text x="290" y="52" font-size="7" font-weight="600" fill="#9D174D" text-anchor="middle">This month</text>
+
+  <rect x="189" y="82" width="122" height="6" rx="3" fill="#FCE7F3"/>
+  <rect x="189" y="82" width="83" height="6" rx="3" fill="#E11D48"/>
+  <text x="189" y="99" font-size="7" fill="#9D174D">68% of budget used</text>
+
+  <text x="189" y="116" font-size="8.5" font-weight="700" fill="#831843">Recent</text>
+
+  <!-- Transactions -->
+  <circle cx="204" cy="134" r="9" fill="#FCE7F3"/>
+  <circle cx="204" cy="134" r="4" fill="#E11D48"/>
+  <text x="218" y="132" font-size="8.5" font-weight="700" fill="#831843">Groceries</text>
+  <text x="218" y="142" font-size="6.5" fill="#BE7A97">Today</text>
+  <text x="311" y="136" font-size="8.5" font-weight="700" fill="#BE123C" text-anchor="end">-$42.50</text>
+
+  <circle cx="204" cy="162" r="9" fill="#FEF3C7"/>
+  <circle cx="204" cy="162" r="4" fill="#F59E0B"/>
+  <text x="218" y="160" font-size="8.5" font-weight="700" fill="#831843">Transport</text>
+  <text x="218" y="170" font-size="6.5" fill="#BE7A97">Today</text>
+  <text x="311" y="164" font-size="8.5" font-weight="700" fill="#BE123C" text-anchor="end">-$12.00</text>
+
+  <circle cx="204" cy="190" r="9" fill="#EDE9FE"/>
+  <circle cx="204" cy="190" r="4" fill="#8B5CF6"/>
+  <text x="218" y="188" font-size="8.5" font-weight="700" fill="#831843">Coffee</text>
+  <text x="218" y="198" font-size="6.5" fill="#BE7A97">Yesterday</text>
+  <text x="311" y="192" font-size="8.5" font-weight="700" fill="#BE123C" text-anchor="end">-$4.80</text>
+
+  <circle cx="204" cy="218" r="9" fill="#DBEAFE"/>
+  <circle cx="204" cy="218" r="4" fill="#3B82F6"/>
+  <text x="218" y="216" font-size="8.5" font-weight="700" fill="#831843">Internet</text>
+  <text x="218" y="226" font-size="6.5" fill="#BE7A97">Mon</text>
+  <text x="311" y="220" font-size="8.5" font-weight="700" fill="#BE123C" text-anchor="end">-$30.00</text>
+
+  <!-- Bottom nav -->
+  <line x1="189" y1="240" x2="311" y2="240" stroke="#FCE7F3"/>
+  <circle cx="208" cy="261" r="6" fill="#FBCFE8"/>
+  <circle cx="292" cy="261" r="6" fill="#FBCFE8"/>
+  <circle cx="250" cy="254" r="15" fill="#E11D48"/>
+  <rect x="244" y="253" width="12" height="2.4" rx="1.2" fill="#fff"/>
+  <rect x="248.8" y="248.2" width="2.4" height="12" rx="1.2" fill="#fff"/>
+
+  <!-- Donut card -->
+  <rect x="30" y="70" width="120" height="120" rx="10" fill="#fff" filter="url(#sh)"/>
+  <text x="42" y="88" font-size="8" font-weight="700" fill="#831843">By category</text>
+  <g transform="rotate(-90 90 128)" fill="none" stroke-width="12">
+    <circle cx="90" cy="128" r="28" stroke="#E11D48" stroke-dasharray="70.4 175.93" stroke-dashoffset="0"/>
+    <circle cx="90" cy="128" r="28" stroke="#F472B6" stroke-dasharray="44 175.93" stroke-dashoffset="-70.4"/>
+    <circle cx="90" cy="128" r="28" stroke="#FBBF24" stroke-dasharray="35.2 175.93" stroke-dashoffset="-114.4"/>
+    <circle cx="90" cy="128" r="28" stroke="#8B5CF6" stroke-dasharray="26.4 175.93" stroke-dashoffset="-149.6"/>
+  </g>
+  <text x="90" y="131" font-size="8.5" font-weight="700" fill="#831843" text-anchor="middle">$1.2k</text>
+  <circle cx="46" cy="176" r="3" fill="#E11D48"/>
+  <circle cx="72" cy="176" r="3" fill="#F472B6"/>
+  <circle cx="98" cy="176" r="3" fill="#FBBF24"/>
+  <circle cx="124" cy="176" r="3" fill="#8B5CF6"/>
+
+  <!-- Under budget chip -->
+  <rect x="30" y="206" width="120" height="32" rx="10" fill="#fff" filter="url(#sh)"/>
+  <circle cx="46" cy="222" r="7" fill="#16A34A"/>
+  <polyline points="42.5,222 45,224.5 50,219.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="220" font-size="8" font-weight="700" fill="#831843">Under budget</text>
+  <text x="58" y="230" font-size="6.5" fill="#BE7A97">$580 left this month</text>
+
+  <!-- Weekly bars card -->
+  <rect x="350" y="70" width="120" height="110" rx="10" fill="#fff" filter="url(#sh)"/>
+  <text x="362" y="88" font-size="8" font-weight="700" fill="#831843">This week</text>
+  <g fill="#FBCFE8">
+    <rect x="362" y="140" width="9" height="24" rx="3"/>
+    <rect x="377" y="128" width="9" height="36" rx="3"/>
+    <rect x="392" y="136" width="9" height="28" rx="3"/>
+    <rect x="422" y="132" width="9" height="32" rx="3"/>
+    <rect x="437" y="124" width="9" height="40" rx="3"/>
+    <rect x="452" y="146" width="9" height="18" rx="3"/>
+  </g>
+  <rect x="407" y="104" width="9" height="60" rx="3" fill="#E11D48"/>
+  <g font-size="6" fill="#BE7A97" text-anchor="middle">
+    <text x="366.5" y="174">M</text><text x="381.5" y="174">T</text><text x="396.5" y="174">W</text>
+    <text x="411.5" y="174">T</text><text x="426.5" y="174">F</text><text x="441.5" y="174">S</text>
+    <text x="456.5" y="174">S</text>
+  </g>
+
+  <!-- Toast -->
+  <rect x="350" y="198" width="120" height="36" rx="10" fill="#fff" filter="url(#sh)"/>
+  <circle cx="367" cy="216" r="7" fill="#E11D48"/>
+  <rect x="363.5" y="215" width="7" height="2" rx="1" fill="#fff"/>
+  <rect x="366" y="212.5" width="2" height="7" rx="1" fill="#fff"/>
+  <text x="380" y="214" font-size="8" font-weight="700" fill="#831843">Expense added</text>
+  <text x="380" y="224" font-size="6.5" fill="#BE7A97">Coffee · $4.80</text>
+
+  <!-- Caption -->
+  <text x="250" y="300" font-size="10.5" font-weight="500" fill="#9D174D" text-anchor="middle">Personal Expense Tracking</text>
 </svg>
