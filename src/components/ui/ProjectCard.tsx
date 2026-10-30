@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { Project } from "@/types";
 import { GithubIcon, ExternalLinkIcon, CodeIcon } from "./Icons";

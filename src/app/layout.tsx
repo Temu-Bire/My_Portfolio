@@ -1,46 +1,101 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  display: "swap",
 });
+
+// Set NEXT_PUBLIC_SITE_URL in Vercel when you add a custom domain.
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://my-portfolio-temubre1996-8124s-projects.vercel.app";
+
+const name = "Temesgen Birhanu";
+const role = "Full-Stack Developer";
+const description =
+  "Fourth-year Computer Science student building full-stack web apps with Next.js, Node.js and PostgreSQL, plus mobile and AI-powered products.";
 
 export const metadata: Metadata = {
-  title: "Temesgen Birhenu | Full-Stack Developer",
-  description:
-    "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building full-stack web, mobile, and AI-powered applications.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${name} | ${role}`,
+    template: `%s | ${name}`,
+  },
+  description,
   keywords: [
-    "Temesgen Birhenu",
+    name,
     "Full-Stack Developer",
-    "Fronte-end Developer",
-    "Back-end Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Next.js",
+    "React",
     "TypeScript",
+    "Node.js",
+    "PostgreSQL",
     "FastAPI",
     "Python",
     "React Native",
-    "AI Applications",
+    "Ethiopia",
   ],
-  authors: [{ name: "Temesgon birhenu" }],
-  creator: "Temesgen Birhenu",
+  authors: [{ name, url: siteUrl }],
+  creator: name,
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://my-portfolio-temubre1996-8124s-projects.vercel.app/",
-    title: "Temesgen Birhenu |  Full-Stack Developer",
-    description:
-      "Portfolio of Temesgen Birhenu, Full-Stack developer building practical software across web, mobile, and AI.",
-    siteName: "Temesgen Birhenu Portfolio",
+    url: "/",
+    title: `${name} | ${role}`,
+    description,
+    siteName: `${name} Portfolio`,
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `${name} | ${role}`,
+    description,
+  },
+  robots: { index: true, follow: true },
   verification: {
-    google: '6Fi4x7I0YP-l4fdSbDKf9fRz79l87tRKbEe2_R9srmQ',
+    google: "6Fi4x7I0YP-l4fdSbDKf9fRz79l87tRKbEe2_R9srmQ",
   },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b0b0f" },
+  ],
+};
+
+// Runs before first paint so dark mode never flashes the wrong theme.
+const themeScript = `
+(function () {
+  try {
+    var stored = localStorage.getItem("theme");
+    var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.classList.toggle("dark", dark);
+  } catch (e) {}
+})();
+`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name,
+  jobTitle: role,
+  url: siteUrl,
+  description,
+  knowsAbout: ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Python"],
+  alumniOf: "Debre Berhan University",
 };
 
 export default function RootLayout({
@@ -51,9 +106,23 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
+      className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-indigo-600 selection:text-white">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className="flex min-h-screen flex-col bg-bg font-sans text-ink antialiased selection:bg-accent selection:text-white">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-white"
+        >
+          Skip to content
+        </a>
         {children}
       </body>
     </html>
