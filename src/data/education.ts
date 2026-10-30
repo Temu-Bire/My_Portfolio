@@ -6,7 +6,6 @@ export const educationData: EducationItem[] = [
     field: "Computer Science & Software Systems",
     institution: "Debre Birhen Universty",
     status: "4th-Year Student",
-    expectedGraduation: "Expected 2027",
     details: [
       "Core coursework in Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks, and Software Engineering Principles.",
       "Hands-on coursework projects focusing on full-stack web applications, relational database design, and algorithmic problem solving.",

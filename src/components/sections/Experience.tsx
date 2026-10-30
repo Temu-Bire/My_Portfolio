@@ -1,69 +1,61 @@
 import { experienceData } from "@/data/experience";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { CheckCircleIcon, CodeIcon } from "@/components/ui/Icons";
+import { CheckCircleIcon } from "@/components/ui/Icons";
 
+// Vertical timeline: the period sits on the left on desktop and above the card on mobile.
+// No "use client" needed: nothing here uses state.
 export function Experience() {
   return (
-    <section id="experience" aria-label="Experience " className="py-16 md:py-24 border-t border-slate-200/80">
-      <SectionHeading
-        title="Experience "
-      />
+    <section
+      id="experience"
+      aria-label="Experience"
+      className="border-t border-line py-16 md:py-24"
+    >
+      <SectionHeading title="Experience" />
 
-      <div className="max-w-4xl mx-auto space-y-8">
-        {experienceData.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl border border-slate-200/90 p-6 sm:p-8 shadow-xs relative overflow-hidden"
-          >
-            {/* Top row: Role & Timeline */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
-                  <CodeIcon size={20} />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900">
-                    {item.role}
-                  </h3>
-                  <p className="text-xs sm:text-sm font-medium text-indigo-600">
-                    {item.context}
-                  </p>
-                </div>
+      <ol className="mx-auto max-w-4xl">
+        {experienceData.map((item, index) => {
+          const isLast = index === experienceData.length - 1;
+
+          return (
+            <li
+              key={`${item.role}`}
+              className="relative grid gap-3 pb-10 pl-8 last:pb-0 md:grid-cols-[10rem_1fr] md:gap-8 md:pl-0"
+            >
+            
+
+              <div aria-hidden="true" />
+
+              {/* Card */}
+              <div className="card p-5 sm:p-6">
+                <h3 className="text-lg font-bold sm:text-xl">{item.role}</h3>
+                <p className="mt-0.5 text-sm font-medium text-accent-ink">
+                  {item.context}
+                </p>
+
+                <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
+                  {item.description}
+                </p>
+
+                <ul className="mt-4 space-y-2">
+                  {item.highlights.map((highlight) => (
+                    <li
+                      key={highlight}
+                      className="flex items-start gap-2.5 text-sm leading-relaxed text-muted"
+                    >
+                      <CheckCircleIcon
+                        size={16}
+                        className="mt-0.5 shrink-0 text-accent"
+                      />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 w-fit">
-                {item.period}
-              </div>
-            </div>
-
-            {/* Description */}
-            <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-              {item.description}
-            </p>
-
-            {/* Highlights */}
-            <div className="mt-5 space-y-2.5">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-600">
-                Key Technical Focus Areas
-              </h4>
-              <ul className="space-y-2">
-                {item.highlights.map((highlight, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed"
-                  >
-                    <CheckCircleIcon
-                      size={16}
-                      className="text-indigo-600 shrink-0 mt-0.5"
-                    />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
-      </div>
+            </li>
+          );
+        })}
+      </ol>
     </section>
   );
 }

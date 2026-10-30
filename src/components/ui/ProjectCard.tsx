@@ -1,88 +1,128 @@
 import Image from "next/image";
-import { Project } from "@/types";
+import type { Project } from "@/types";
 import { GithubIcon, ExternalLinkIcon, CodeIcon } from "./Icons";
 import { Button } from "./Button";
 
 interface ProjectCardProps {
   project: Project;
+  /** "featured" is the large horizontal card used for your best project. */
+  variant?: "default" | "featured";
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
- 
+// Placeholder links ("#", or a YOUR_USERNAME template) should not become buttons.
+function isRealUrl(url: string | undefined): url is string {
+  return (
+    typeof url === "string" &&
+    url !== "" &&
+    url !== "#" &&
+    !url.includes("YOUR_USERNAME")
+  );
+}
+
+export function ProjectCard({ project, variant = "default" }: ProjectCardProps) {
+  const isFeatured = variant === "featured";
+  const hasSource = isRealUrl(project.githubUrl);
+  const hasLive = isRealUrl(project.liveUrl);
 
   return (
-    <article className="group flex flex-col h-full bg-white rounded-xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all duration-200 hover:-translate-y-1 overflow-hidden">
-      {/* Visual Header / Image Container */}
-      <div className="relative w-full h-48 sm:h-52 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200/70 border-b border-slate-100 overflow-hidden flex items-center justify-center">
+    <article
+      className={`card group flex h-full flex-col overflow-hidden ${
+        isFeatured ? "lg:flex-row" : ""
+      }`}
+    >
+      {/* Image */}
+      <div
+        className={`relative overflow-hidden border-b border-line bg-surface-2 ${
+          isFeatured
+            ? "aspect-[16/10] lg:aspect-auto lg:min-h-[22rem] lg:w-1/2 lg:border-b-0 lg:border-r"
+            : "aspect-[16/10]"
+        }`}
+      >
         {project.image ? (
-          <div className="relative w-full h-full">
-            <Image
-              src={project.image}
-              alt={project.title}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
+          <Image
+            src={project.image}
+            alt={`${project.title} preview`}
+            fill
+            sizes={
+              isFeatured
+                ? "(max-width: 1024px) 100vw, 576px"
+                : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 384px"
+            }
+            className="object-cover object-top transition-transform duration-300 group-hover:scale-105 motion-reduce:transition-none"
+          />
         ) : (
-          <div className="flex flex-col items-center justify-center text-slate-400 gap-2">
-            <CodeIcon size={32} className="text-slate-400" />
-            <span className="text-xs font-medium text-slate-500">
-              Project Preview
-            </span>
+          <div className="flex h-full w-full flex-col items-center justify-center gap-2 text-muted">
+            <CodeIcon size={32} />
+            <span className="text-xs font-medium">Project preview</span>
           </div>
-        )}        
+        )}
       </div>
 
-      {/* Body Content */}
-      <div className="flex flex-col flex-1 p-5 sm:p-6">
-        {/* Title */}
-        <h3 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight group-hover:text-indigo-600 transition-colors">
+      {/* Body */}
+      <div
+        className={`flex flex-1 flex-col p-5 sm:p-6 ${
+          isFeatured ? "lg:w-1/2 lg:p-10" : ""
+        }`}
+      >
+        {isFeatured && (
+          <span className="mb-3 inline-flex w-fit items-center rounded-full bg-accent-soft px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-accent-ink">
+            Featured project
+          </span>
+        )}
+
+        <h3
+          className={`font-display font-bold tracking-tight transition-colors group-hover:text-accent-ink ${
+            isFeatured ? "text-2xl sm:text-3xl" : "text-lg sm:text-xl"
+          }`}
+        >
           {project.title}
         </h3>
 
-        {/* Technologies List */}
-        <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5">
+        <ul
+          aria-label={`${project.title} technologies`}
+          className="mt-4 flex flex-wrap gap-1.5"
+        >
           {project.technologies.map((tech) => (
-            <span
+            <li
               key={tech}
-              className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200/70 transition-colors"
+              className="rounded-md border border-line bg-surface-2 px-2 py-0.5 text-xs font-medium text-muted"
             >
               {tech}
-            </span>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        {/* Action Links */}
-        <div className="mt-auto pt-5 flex items-center gap-3">
-          {project.githubUrl && (
-            <Button
-              variant="outline"
-              size="sm"
-              href={project.githubUrl}
-              isExternal
-              className="flex-1 text-xs"
-              aria-label={`View ${project.title} source code on GitHub`}
-            >
-              <GithubIcon size={15} />
-              <span>Source</span>
-            </Button>
-          )}
+        {(hasSource || hasLive) && (
+          <div className="mt-auto flex flex-wrap items-center gap-3 pt-5">
+            {hasSource && (
+              <Button
+                variant="outline"
+                size={isFeatured ? "md" : "sm"}
+                href={project.githubUrl}
+                isExternal
+                className={isFeatured ? "" : "flex-1 text-xs"}
+                aria-label={`View ${project.title} source code on GitHub`}
+              >
+                <GithubIcon size={15} />
+                <span>Source</span>
+              </Button>
+            )}
 
-          {project.liveUrl && (
-            <Button
-              variant="primary"
-              size="sm"
-              href={project.liveUrl}
-              isExternal
-              className="flex-1 text-xs"
-              aria-label={`View live demo of ${project.title}`}
-            >
-              <ExternalLinkIcon size={14} />
-              <span>Live Demo</span>
-            </Button>
-          )}
-        </div>
+            {hasLive && (
+              <Button
+                variant="primary"
+                size={isFeatured ? "md" : "sm"}
+                href={project.liveUrl}
+                isExternal
+                className={isFeatured ? "" : "flex-1 text-xs"}
+                aria-label={`View live demo of ${project.title}`}
+              >
+                <ExternalLinkIcon size={14} />
+                <span>Live Demo</span>
+              </Button>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );

@@ -1,4 +1,3 @@
-
 interface SectionHeadingProps {
   badge?: string;
   title: string;
@@ -19,23 +18,30 @@ export function SectionHeading({
   return (
     <div
       className={`mb-12 md:mb-16 ${
-        isCenter ? "text-center max-w-2xl mx-auto" : "max-w-3xl"
+        isCenter ? "mx-auto max-w-2xl text-center" : "max-w-3xl"
       } ${className}`}
     >
       {badge && (
         <div
-          className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-indigo-50 text-indigo-700 border border-indigo-100/80 mb-3 ${
+          className={`mb-3 inline-flex items-center gap-1.5 rounded-full border border-line bg-accent-soft px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent-ink ${
             isCenter ? "mx-auto" : ""
           }`}
         >
           {badge}
         </div>
       )}
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900">
+      <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">
         {title}
       </h2>
+      {/* Small accent bar under every heading */}
+      <span
+        aria-hidden="true"
+        className={`mt-4 block h-1 w-12 rounded-full bg-accent ${
+          isCenter ? "mx-auto" : ""
+        }`}
+      />
       {subtitle && (
-        <p className="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">
+        <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
           {subtitle}
         </p>
       )}

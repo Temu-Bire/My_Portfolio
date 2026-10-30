@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { profileData } from "@/data/profile";
 import "./globals.css";
 
 const inter = Inter({
@@ -19,8 +20,8 @@ const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   "https://my-portfolio-temubre1996-8124s-projects.vercel.app";
 
-const name = "Temesgen Birhanu";
-const role = "Full-Stack Developer";
+// Name and role come from data/profile.ts, so you fix a spelling in one place.
+const { name, role } = profileData;
 const description =
   "Fourth-year Computer Science student building full-stack web apps with Next.js, Node.js and PostgreSQL, plus mobile and AI-powered products.";
 
@@ -69,23 +70,9 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  colorScheme: "light dark",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
-    { media: "(prefers-color-scheme: dark)", color: "#0b0b0f" },
-  ],
+  colorScheme: "light",
+  themeColor: "#fafafa",
 };
-
-// Runs before first paint so dark mode never flashes the wrong theme.
-const themeScript = `
-(function () {
-  try {
-    var stored = localStorage.getItem("theme");
-    var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.classList.toggle("dark", dark);
-  } catch (e) {}
-})();
-`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -94,6 +81,9 @@ const jsonLd = {
   jobTitle: role,
   url: siteUrl,
   description,
+  sameAs: profileData.socialLinks
+    .map((link) => link.url)
+    .filter((url) => url.startsWith("http")),
   knowsAbout: ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Python"],
   alumniOf: "Debre Berhan University",
 };
@@ -106,17 +96,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
       className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      <body className="flex min-h-screen flex-col bg-bg font-sans text-ink antialiased selection:bg-accent selection:text-white">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className="flex min-h-screen flex-col bg-bg font-sans text-ink antialiased selection:bg-accent selection:text-white">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-white"

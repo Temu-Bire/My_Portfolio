@@ -2,9 +2,8 @@ import { ExperienceItem } from "@/types";
 
 export const experienceData: ExperienceItem[] = [
   {
-    role: "Student Software Developer",
+    role: "Full-Stack Developer",
     context: "Academic & Independent Projects",
-    period: "2024 – Present",
     description:
       "Building full-stack web, mobile, and AI-powered applications.",
     highlights: [

@@ -1,122 +1,124 @@
-"use client";
-
-import  { useState } from "react";
 import Image from "next/image";
 import { profileData } from "@/data/profile";
 import { Button } from "@/components/ui/Button";
 import {
+  ArrowRightIcon,
+  DownloadIcon,
   GithubIcon,
   LinkedinIcon,
   MailIcon,
-  ArrowRightIcon,
 } from "@/components/ui/Icons";
 
+// Edit these three lines to change the hero copy.
+const CV_PATH = "/Temesgen-Birhanu-CV.pdf"; // put the PDF in /public
+const STACK = ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "FastAPI"];
+
+const socialIcons = {
+  github: GithubIcon,
+  linkedin: LinkedinIcon,
+  mail: MailIcon,
+} as const;
+
+// No "use client" needed: nothing here uses state or effects,
+// so this section ships zero JavaScript to the browser.
 export function Hero() {
-  const [imageError, setImageError] = useState(false);
-
-  const getSocialIcon = (iconName: string) => {
-    switch (iconName) {
-      case "github":
-        return <GithubIcon size={18} />;
-      case "linkedin":
-        return <LinkedinIcon size={18} />;
-      case "mail":
-      default:
-        return <MailIcon size={18} />;
-    }
-  };
-
   return (
     <section
       id="hero"
       aria-label="Introduction"
-      className="relative pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden"
+      className="relative overflow-hidden pb-16 pt-10 md:pb-24 md:pt-20"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        {/* Left Column: Text & CTAs */}
-        <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
-          {/* Status Badge */}
-      
-          {/* Main Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
-            <span className="text-indigo-600"> Full-Stack Developer </span> 
+      <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-8">
+        {/* Left: text and calls to action */}
+        <div className="flex flex-col items-start space-y-6 lg:col-span-7">
+
+          <h1
+            className="animate-fade-up text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-6xl"
+            style={{ animationDelay: "80ms" }}
+          >
+            I build  {" "}
+            <span className="text-accent">Full-Stack apps</span> 
+            
           </h1>
 
-          {/* Bio Summary */}
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+          <p
+            className="animate-fade-up max-w-2xl text-base leading-relaxed text-muted sm:text-lg"
+            style={{ animationDelay: "160ms" }}
+          >
             {profileData.heroSummary}
           </p>
 
-          {/* CTA Buttons & Socials */}
-          <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+          <div
+            className="animate-fade-up flex w-full flex-col gap-3 pt-2 sm:w-auto sm:flex-row sm:items-center"
+            style={{ animationDelay: "240ms" }}
+          >
             <Button variant="primary" size="lg" href="#projects">
-              <span>View My Projects</span>
+              <span>View Projects</span>
               <ArrowRightIcon size={16} />
             </Button>
-            <Button variant="outline" size="lg" href="#contact">
-              <span>Contact Me</span>
+            <Button variant="outline" size="lg" href={CV_PATH} download>
+              <DownloadIcon size={16} />
+              <span>Download CV</span>
             </Button>
           </div>
 
-          {/* Social Profiles Row */}
-          <div className="pt-4 flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-wider text-slate-600">
-              Connect:
-            </span>
-            <div className="flex items-center gap-2">
-              {profileData.socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.url}
-                  target={social.url.startsWith("http") ? "_blank" : undefined}
-                  rel={social.url.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="p-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 border border-slate-200 bg-white shadow-2xs transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  aria-label={social.label}
+          <div
+            className="animate-fade-up flex flex-wrap items-center gap-x-6 gap-y-4 pt-4"
+            style={{ animationDelay: "320ms" }}
+          >
+            <ul aria-label="Main technologies" className="flex flex-wrap gap-2">
+              {STACK.map((tech) => (
+                <li
+                  key={tech}
+                  className="rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted"
                 >
-                  {getSocialIcon(social.icon)}
-                </a>
+                  {tech}
+                </li>
               ))}
+            </ul>
+
+            <div className="flex items-center gap-2">
+              {profileData.socialLinks.map((social) => {
+                const Icon =
+                  socialIcons[social.icon as keyof typeof socialIcons] ?? MailIcon;
+                const external = social.url.startsWith("http");
+                return (
+                  <a
+                    key={social.name}
+                    href={social.url}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noopener noreferrer" : undefined}
+                    aria-label={social.label}
+                    className="rounded-lg border border-line bg-surface p-2 text-muted transition-colors hover:border-accent hover:text-accent"
+                  >
+                    <Icon size={18} />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
 
-        {/* Right Column: Professional Photo Slot */}
-        <div className="lg:col-span-5 flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-xs sm:max-w-sm aspect-square">
-            {/* Soft decorative backdrop */}
-            <div className="absolute -inset-2 rounded-2xl bg-gradient-to-tr from-indigo-100 to-sky-100 -z-10 blur-xs" />
+        {/* Right: photo */}
+        <div className="animate-fade-up lg:col-span-5" style={{ animationDelay: "200ms" }}>
+          <div className="relative isolate mx-auto w-full max-w-[18rem] sm:max-w-sm lg:ml-auto lg:mr-0">
+            {/* Accent glow behind the frame */}
+            <div
+              aria-hidden="true"
+              className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-tr from-accent/40 via-accent/10 to-transparent blur-2xl"
+            />
 
-            {/* Photo Card Container */}
-            <div className="relative h-full w-full rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-sm overflow-hidden flex flex-col items-center justify-center">
-              {!imageError ? (
-                <div className="relative h-full w-full rounded-xl overflow-hidden bg-slate-100">
-                  <Image
-                    src={profileData.photoPath}
-                    alt={`${profileData.name} - Professional Portrait`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 400px"
-                    className="object-cover object-center"
-                    priority
-                    onError={() => setImageError(true)}
-                  />
-                </div>
-              ) : (
-                /* Clean placeholder fallback if profile.jpg is not yet provided */
-                <div className="h-full w-full rounded-xl bg-gradient-to-br from-slate-50 via-indigo-50/30 to-slate-100 border border-dashed border-indigo-200 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="w-20 h-20 rounded-full bg-indigo-600 text-white font-bold text-2xl flex items-center justify-center shadow-sm mb-3">
-                    TB
-                  </div>
-                  <h2 className="font-bold text-slate-900 text-base">
-                    {profileData.name}
-                  </h2>
-                  <p className="text-xs text-slate-500 mt-1 max-w-[200px]">
-                    Photo slot: Place your photo at{" "}
-                    <code className="text-indigo-600 font-mono text-[11px] bg-indigo-50 px-1 py-0.5 rounded">
-                      /public/profile.svg
-                    </code>
-                  </p>
-                </div>
-              )}
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-line bg-surface p-2 shadow-xl">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl bg-surface-2">
+                <Image
+                  src={profileData.photoPath}
+                  alt={`${profileData.name} - portrait`}
+                  fill
+                  sizes="(max-width: 1024px) 80vw, 400px"
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

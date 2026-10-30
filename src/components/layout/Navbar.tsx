@@ -1,7 +1,8 @@
 "use client";
 
-import  { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { profileData } from "@/data/profile";
 import { MenuIcon, XIcon, ArrowRightIcon } from "@/components/ui/Icons";
 import { Button } from "@/components/ui/Button";
 
@@ -15,78 +16,96 @@ const NAV_LINKS = [
   { name: "Contact", href: "#contact" },
 ];
 
+const SECTION_IDS = NAV_LINKS.map((link) => link.href.slice(1));
+
+// "Temesgen Birhenu" -> "TB"
+const initials = profileData.name
+  .split(" ")
+  .map((word) => word[0])
+  .join("")
+  .slice(0, 2)
+  .toUpperCase();
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
 
+  // The scroll handler only flips one boolean. React skips the re-render
+  // when the value is unchanged, so this is cheap.
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-
-      // Simple active link spy
-      const sections = NAV_LINKS.map((link) => link.href.substring(1));
-      const current = sections.find((section) => {
-        const el = document.getElementById(section);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          return rect.top <= 120 && rect.bottom >= 120;
-        }
-        return false;
-      });
-
-      if (current) {
-        setActiveSection(current);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Active link: IntersectionObserver tells us when a section crosses a thin band
+  // near the middle of the screen. The old version measured every section on
+  // every scroll event, which forces layout work on each frame.
+  useEffect(() => {
+    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(
+      (el): el is HTMLElement => el !== null,
+    );
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) setActiveSection(entry.target.id);
+        }
+      },
+      { rootMargin: "-40% 0px -55% 0px" },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
+  // Escape closes the mobile menu.
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isOpen]);
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-200 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-xs"
-          : "bg-white/80 backdrop-blur-sm border-b border-slate-200/60"
+      className={`sticky top-0 z-50 w-full border-b backdrop-blur-md transition-colors duration-200 ${
+        scrolled ? "border-line bg-bg/90" : "border-transparent bg-bg/70"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Brand Logo */}
-          <Link
-            href="#hero"
-            className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1"
-          >
-            <div className="w-9 h-9 rounded-lg bg-indigo-600 text-white font-bold text-base flex items-center justify-center shadow-xs group-hover:bg-indigo-700 transition-colors">
-              TB
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-slate-900 text-base tracking-tight leading-tight group-hover:text-indigo-600 transition-colors">
-                Temesgen Birhenu
+      <div className="container-page">
+        <div className="flex h-16 items-center justify-between">
+          {/* Brand */}
+          <Link href="#hero" className="group flex items-center gap-2.5 rounded-lg p-1">
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-sm font-bold text-white transition-transform group-hover:scale-105">
+              {initials}
+            </span>
+            <span className="flex flex-col">
+              <span className="font-display text-base font-bold leading-tight tracking-tight">
+                {profileData.name}
               </span>
-              <span className="text-xs text-slate-600 font-medium leading-none">
-                 Full-Stack Developer
+              <span className="text-xs font-medium leading-none text-muted">
+                {profileData.role}
               </span>
-            </div>
+            </span>
           </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav
-            className="hidden md:flex items-center gap-1 lg:gap-2"
-            aria-label="Main Navigation"
-          >
+          {/* Desktop links */}
+          <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">
             {NAV_LINKS.map((link) => {
-              const isActive = activeSection === link.href.substring(1);
+              const isActive = activeSection === link.href.slice(1);
               return (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                  aria-current={isActive ? "location" : undefined}
+                  className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
                     isActive
-                      ? "text-indigo-600 bg-indigo-50/80 font-semibold"
-                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+                      ? "bg-accent-soft text-accent-ink"
+                      : "text-muted hover:bg-surface-2 hover:text-ink"
                   }`}
                 >
                   {link.name}
@@ -95,43 +114,57 @@ export function Navbar() {
             })}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Desktop action */}
+          <div className="hidden md:block">
             <Button variant="primary" size="sm" href="#contact">
               <span>Let&apos;s Connect</span>
               <ArrowRightIcon size={14} />
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex md:hidden">
+          {/* Mobile menu button */}
+          <div className="md:hidden">
             <button
               type="button"
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              aria-label={isOpen ? "Close Navigation Menu" : "Open Navigation Menu"}
+              onClick={() => setIsOpen((open) => !open)}
+              className="rounded-lg border border-line bg-surface p-2 text-muted transition-colors hover:text-ink"
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={isOpen}
+              aria-controls="mobile-nav"
             >
-              {isOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
+              {isOpen ? <XIcon size={20} /> : <MenuIcon size={20} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation Drawer */}
+      {/* Mobile drawer */}
       {isOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white/98 backdrop-blur-lg px-4 pt-2 pb-6 space-y-1 shadow-lg animate-in slide-in-from-top-2 duration-200">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors"
-            >
-              {link.name}
-            </Link>
-          ))}
-          <div className="pt-4 mt-2 border-t border-slate-100">
+        <div
+          id="mobile-nav"
+          className="animate-fade-up border-t border-line bg-bg px-4 pb-6 pt-2 shadow-lg md:hidden"
+        >
+          <nav aria-label="Mobile navigation" className="space-y-1">
+            {NAV_LINKS.map((link) => {
+              const isActive = activeSection === link.href.slice(1);
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={isActive ? "location" : undefined}
+                  className={`block rounded-lg px-3 py-2.5 text-base font-medium transition-colors ${
+                    isActive
+                      ? "bg-accent-soft text-accent-ink"
+                      : "text-muted hover:bg-surface-2 hover:text-ink"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
+          </nav>
+          <div className="mt-3 border-t border-line pt-4">
             <Button
               variant="primary"
               size="md"

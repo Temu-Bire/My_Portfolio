@@ -1,11 +1,16 @@
 import React from "react";
 import Link from "next/link";
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "onClick"> {
   variant?: "primary" | "secondary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   href?: string;
   isExternal?: boolean;
+  /** For file links such as a CV PDF: renders a plain <a download> instead of a Next.js Link. */
+  download?: boolean | string;
+  /** Works for buttons and links (the old version dropped onClick on links). */
+  onClick?: React.MouseEventHandler<HTMLElement>;
   children: React.ReactNode;
   className?: string;
 }
@@ -15,12 +20,15 @@ export function Button({
   size = "md",
   href,
   isExternal = false,
+  download,
+  onClick,
   children,
   className = "",
   ...props
 }: ButtonProps) {
+  // Keyboard focus ring comes from the global :focus-visible rule in globals.css.
   const baseStyles =
-    "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed select-none";
+    "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed select-none";
 
   const sizeStyles = {
     sm: "text-xs px-3 py-1.5 gap-1.5",
@@ -30,25 +38,31 @@ export function Button({
 
   const variantStyles = {
     primary:
-      "bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm hover:shadow active:scale-[0.98] focus:ring-indigo-500",
+      "bg-accent text-white shadow-sm hover:bg-accent-ink hover:shadow-md active:scale-[0.98]",
     secondary:
-      "bg-slate-100 text-slate-800 hover:bg-slate-200 border border-slate-200/80 active:scale-[0.98] focus:ring-slate-400",
+      "bg-surface-2 text-ink border border-line hover:border-accent active:scale-[0.98]",
     outline:
-      "border border-slate-300 text-slate-700 bg-white hover:bg-slate-50 hover:border-slate-400 active:scale-[0.98] focus:ring-indigo-500",
+      "border border-line bg-surface text-ink hover:border-accent hover:text-accent-ink active:scale-[0.98]",
     ghost:
-      "text-slate-600 hover:text-slate-900 hover:bg-slate-100 active:scale-[0.98] focus:ring-slate-400",
+      "text-muted hover:text-ink hover:bg-surface-2 active:scale-[0.98]",
   };
 
   const combinedStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;
 
   if (href) {
-    if (isExternal || href.startsWith("http") || href.startsWith("mailto:")) {
+    const isHttp = href.startsWith("http");
+    const useAnchor = Boolean(download) || isExternal || isHttp || href.startsWith("mailto:");
+
+    if (useAnchor) {
       return (
         <a
           href={href}
+          download={download || undefined}
           className={combinedStyles}
-          target={href.startsWith("http") ? "_blank" : undefined}
-          rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+          onClick={onClick}
+          aria-label={props["aria-label"]}
+          target={isHttp ? "_blank" : undefined}
+          rel={isHttp ? "noopener noreferrer" : undefined}
         >
           {children}
         </a>
@@ -56,14 +70,19 @@ export function Button({
     }
 
     return (
-      <Link href={href} className={combinedStyles}>
+      <Link
+        href={href}
+        className={combinedStyles}
+        onClick={onClick}
+        aria-label={props["aria-label"]}
+      >
         {children}
       </Link>
     );
   }
 
   return (
-    <button className={combinedStyles} {...props}>
+    <button className={combinedStyles} onClick={onClick} {...props}>
       {children}
     </button>
   );

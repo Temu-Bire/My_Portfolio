@@ -9,109 +9,64 @@ import {
   SparklesIcon,
 } from "@/components/ui/Icons";
 
+// Maps the iconName in data/skills.ts to an icon component.
+const categoryIcons = {
+  frontend: CodeIcon,
+  backend: ServerIcon,
+  mobile: SmartphoneIcon,
+  database: DatabaseIcon,
+  devops: TerminalIcon,
+  ai: SparklesIcon,
+} as const;
+
 export function Skills() {
-  const getCategoryIcon = (iconName: string) => {
-    switch (iconName) {
-      case "frontend":
-        return <CodeIcon size={20} className="text-indigo-600" />;
-      case "backend":
-        return <ServerIcon size={20} className="text-indigo-600" />;
-      case "mobile":
-        return <SmartphoneIcon size={20} className="text-emerald-600" />;
-      case "database":
-        return <DatabaseIcon size={20} className="text-blue-600" />;
-      case "devops":
-        return <TerminalIcon size={20} className="text-slate-700" />;
-      case "ai":
-      default:
-        return <SparklesIcon size={20} className="text-purple-600" />;
-    }
-  };
-
-  const getCategoryTheme = (iconName: string) => {
-    switch (iconName) {
-      case "frontend":
-        return {
-          bg: "bg-indigo-50/60",
-          badge: "bg-indigo-50 text-indigo-700 border-indigo-100",
-        };
-      case "backend":
-        return {
-          bg: "bg-blue-50/60",
-          badge: "bg-blue-50 text-blue-700 border-blue-100",
-        };
-      case "mobile":
-        return {
-          bg: "bg-emerald-50/60",
-          badge: "bg-emerald-50 text-emerald-700 border-emerald-100",
-        };
-      case "database":
-        return {
-          bg: "bg-amber-50/60",
-          badge: "bg-amber-50 text-amber-700 border-amber-100",
-        };
-      case "devops":
-        return {
-          bg: "bg-slate-50",
-          badge: "bg-slate-100 text-slate-700 border-slate-200",
-        };
-      case "ai":
-      default:
-        return {
-          bg: "bg-purple-50/60",
-          badge: "bg-purple-50 text-purple-700 border-purple-100",
-        };
-    }
-  };
-
   return (
-    <section id="skills" aria-label="Skills" className="py-16 md:py-24 border-t border-slate-200/80">
-      <SectionHeading
-        title="Skills &amp; Technologies"
-      />
+    <section
+      id="skills"
+      aria-label="Skills"
+      className="border-t border-line py-16 md:py-24"
+    >
+      <SectionHeading title="Skills &amp; Technologies" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {skillCategories.map((category) => {
-          const theme = getCategoryTheme(category.iconName);
+      {/* One card, one row per category: much shorter than six separate cards. */}
+      <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-line bg-surface shadow-sm">
+        <ul className="divide-y divide-line">
+          {skillCategories.map((category) => {
+            const Icon =
+              categoryIcons[category.iconName as keyof typeof categoryIcons] ??
+              SparklesIcon;
 
-          return (
-            <div
-              key={category.title}
-              className="bg-white rounded-xl border border-slate-200/90 p-6 shadow-xs hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 flex flex-col justify-between"
-            >
-              <div>
-                {/* Header with category icon & title */}
-                <div className="flex items-center gap-3 mb-3">
-                  <div className={`w-10 h-10 rounded-lg ${theme.bg} flex items-center justify-center shrink-0`}>
-                    {getCategoryIcon(category.iconName)}
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900 tracking-tight">
+            return (
+              <li
+                key={category.title}
+                className="grid gap-4 p-5 sm:p-6 md:grid-cols-[13rem_1fr] md:items-center md:gap-8"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-soft text-accent-ink">
+                    <Icon size={20} />
+                  </span>
+                  <h3 className="text-base font-semibold tracking-tight">
                     {category.title}
                   </h3>
                 </div>
 
-                {/* Category description */}
-                {category.description && (
-                  <p className="text-xs text-slate-500 mb-4 leading-relaxed">
-                    {category.description}
-                  </p>
-                )}
-
-                {/* Skill Pills */}
-                <div className="flex flex-wrap gap-2 pt-1">
+                <ul
+                  aria-label={`${category.title} skills`}
+                  className="flex flex-wrap gap-2"
+                >
                   {category.skills.map((skill) => (
-                    <span
+                    <li
                       key={skill}
-                      className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100/90 text-slate-700 border border-slate-200/60 hover:bg-white hover:border-slate-300 transition-colors"
+                      className="rounded-md border border-line bg-surface-2 px-2.5 py-1 text-xs font-medium text-ink transition-colors hover:border-accent hover:bg-accent-soft hover:text-accent-ink"
                     >
                       {skill}
-                    </span>
+                    </li>
                   ))}
-                </div>
-              </div>
-            </div>
-          );
-        })}
+                </ul>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );

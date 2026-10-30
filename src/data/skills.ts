@@ -16,7 +16,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Backend Engineering",
+    title: "Backend Development",
     description: "Architecting RESTful APIs, business logic, and server-side services.",
     iconName: "backend",
     skills: ["Node.js", "Express", "FastAPI", "Python", "REST APIs"],

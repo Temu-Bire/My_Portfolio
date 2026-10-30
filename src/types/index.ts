@@ -20,7 +20,6 @@ export interface SkillCategory {
 export interface ExperienceItem {
   role: string;
   context: string;
-  period: string;
   description: string;
   highlights: string[];
 }
@@ -30,7 +29,6 @@ export interface EducationItem {
   field: string;
   institution: string;
   status: string;
-  expectedGraduation: string;
   details: string[];
 }
 
