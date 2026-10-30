@@ -1,16 +1,15 @@
-
 import { profileData } from "@/data/profile";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-slate-200 my-3">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 ">
-        {/* Bottom copyright row */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-slate-500">
-          <p>© {currentYear} {profileData.name}. All rights reserved.</p>
-        </div>
+    <footer className="border-t border-line bg-surface">
+      <div className="container-page flex flex-col items-center justify-between gap-2 py-8 text-sm text-muted sm:flex-row">
+        <p>
+          © {currentYear} {profileData.name}. All rights reserved.
+        </p>
+        <p>Built with Next.js and Tailwind CSS</p>
       </div>
     </footer>
   );

@@ -31,5 +31,5 @@ export const profileData = {
     },
   ] satisfies SocialLink[],
   email: "temubre1996@gmail.com",
-  photoPath: "/profile.svg",
+  photoPath: "/profile.webp",
 };

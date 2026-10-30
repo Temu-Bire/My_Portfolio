@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
-];
+]
 
 const SECTION_IDS = NAV_LINKS.map((link) => link.href.slice(1));
 

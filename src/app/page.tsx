@@ -8,12 +8,15 @@ import { Experience } from "@/components/sections/Experience";
 import { Education } from "@/components/sections/Education";
 import { Contact } from "@/components/sections/Contact";
 
+// layout.tsx already sets the page background, text color and the flex column on <body>,
+// so this page only needs the three parts: navbar, main content, footer.
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 text-slate-900">
+    <>
       <Navbar />
 
-      <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* id="main" is the target of the "Skip to content" link in layout.tsx */}
+      <main id="main" className="container-page flex-1">
         <Hero />
         <About />
         <Skills />
@@ -24,6 +27,6 @@ export default function Home() {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
