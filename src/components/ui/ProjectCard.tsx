@@ -42,21 +42,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.title}
         </h3>
 
-        {/* Short description */}
-        <p className="mt-2.5 text-sm text-slate-600 leading-relaxed">
-          {project.description}
-        </p>
-
-        {/* Problem Solved highlight */}
-        {project.problemSolved && (
-          <div className="mt-3 p-3 rounded-lg bg-slate-50 border border-slate-150/70 text-xs text-slate-600">
-            <span className="font-semibold text-slate-700 block mb-0.5">
-              Problem Solved:
-            </span>
-            {project.problemSolved}
-          </div>
-        )}
-
         {/* Technologies List */}
         <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5">
           {project.technologies.map((tech) => (

@@ -1,22 +1,9 @@
-import React from "react";
-import Link from "next/link";
+
 import { profileData } from "@/data/profile";
 import { GithubIcon, LinkedinIcon, MailIcon } from "@/components/ui/Icons";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const getIcon = (iconName: string) => {
-    switch (iconName) {
-      case "github":
-        return <GithubIcon size={18} />;
-      case "linkedin":
-        return <LinkedinIcon size={18} />;
-      case "mail":
-      default:
-        return <MailIcon size={18} />;
-    }
-  };
 
   return (
     <footer className="bg-white border-t border-slate-200 my-3">

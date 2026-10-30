@@ -113,26 +113,11 @@ export function Hero() {
                   <p className="text-xs text-slate-500 mt-1 max-w-[200px]">
                     Photo slot: Place your photo at{" "}
                     <code className="text-indigo-600 font-mono text-[11px] bg-indigo-50 px-1 py-0.5 rounded">
-                      /public/profile.jpg
+                      /public/profile.svg
                     </code>
                   </p>
                 </div>
               )}
-
-              {/* Verified Student Badge on bottom corner */}
-              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-xs rounded-lg border border-slate-200/80 px-3 py-2 shadow-xs flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-md bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
-                  <CodeIcon size={16} />
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-xs font-bold text-slate-800 leading-tight">
-                    CS Senior Developer
-                  </span>
-                  <span className="text-[11px] text-slate-500 leading-tight">
-                    3+ Years Practical Coding
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

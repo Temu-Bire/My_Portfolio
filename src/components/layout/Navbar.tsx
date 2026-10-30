@@ -64,10 +64,10 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-slate-900 text-base tracking-tight leading-tight group-hover:text-indigo-600 transition-colors">
-                Temu Bire
+                Temesgen Birhenu
               </span>
               <span className="text-xs text-slate-600 font-medium leading-none">
-                CS Student &amp; Developer
+                 Full-Stack Developer
               </span>
             </div>
           </Link>

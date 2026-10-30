@@ -10,21 +10,6 @@ export const profileData = {
     "I enjoy working across the stack—from designing responsive interfaces and building backend APIs to working with databases, mobile applications, cloud-ready development, and AI-powered systems.",
     "I learn primarily by building projects, solving problems, and continuously improving my engineering practices.",
   ],
-  stats: [
-    {
-      value: "4th Year",
-      label: "Computer Science Student",
-    },
-    {
-      value: "3+",
-      label: "Years Coding Experience",
-    },
-  
-    {
-      value: "Full Stack",
-      label: "Web & Mobile Development",
-    },
-  ],
   socialLinks: [
     {
       name: "GitHub",
@@ -46,5 +31,5 @@ export const profileData = {
     },
   ] satisfies SocialLink[],
   email: "temubre1996@gmail.com",
-  photoPath: "../../public/profile.svg",
+  photoPath: "/public/profile.svg",
 };

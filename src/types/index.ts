@@ -1,22 +1,12 @@
-export type ProjectCategory =
-  | "All"
-  | "Full Stack"
-  | "Web"
-  | "Mobile"
-  | "AI"
-  | "Backend"
-  | "DevOps";
+
 
 export interface Project {
   id: string;
   title: string;
-  description: string;
-  problemSolved: string;
   image?: string;
   technologies: string[];
   githubUrl: string;
   liveUrl?: string;
-  caseStudyUrl?: string;
   featured?: boolean;
 }
 
