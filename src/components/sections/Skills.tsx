@@ -1,4 +1,3 @@
-import React from "react";
 import { skillCategories } from "@/data/skills";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import {
@@ -109,12 +108,6 @@ export function Skills() {
                     </span>
                   ))}
                 </div>
-              </div>
-
-              {/* Honest Learning indicator */}
-              <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-600">
-                <span>Continuously developing</span>
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
               </div>
             </div>
           );

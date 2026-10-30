@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 import { profileData } from "@/data/profile";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -62,22 +62,7 @@ export function Contact() {
             </p>
 
             <div className="space-y-4 pt-2">
-              <a
-                href={`mailto:${profileData.email}`}
-                className="flex items-center gap-3.5 p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/50 transition-colors group"
-              >
-                <div className="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors shrink-0">
-                  <MailIcon size={20} />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-600 block">
-                    Email
-                  </span>
-                  <span className="text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                    {profileData.email}
-                  </span>
-                </div>
-              </a>
+              
 
               <div className="pt-2">
                 <span className="text-xs font-semibold uppercase tracking-wider text-slate-600 block mb-3">

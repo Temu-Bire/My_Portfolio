@@ -1,6 +1,5 @@
 
 import { profileData } from "@/data/profile";
-import { GithubIcon, LinkedinIcon, MailIcon } from "@/components/ui/Icons";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

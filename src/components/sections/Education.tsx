@@ -5,9 +5,7 @@ import {
   GraduationCapIcon,
   AwardIcon,
   CheckCircleIcon,
-  ExternalLinkIcon,
 } from "@/components/ui/Icons";
-import { Button } from "@/components/ui/Button";
 
 export function Education() {
   return (
@@ -129,25 +127,6 @@ export function Education() {
                   ))}
                 </div>
               </div>
-            </div>
-
-            {/* Verification action */}
-            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <span className="text-xs text-slate-500">
-                Issued by Gebeya Inc.
-              </span>
-              {cert.verificationUrl && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  href={cert.verificationUrl}
-                  isExternal
-                  className="text-xs"
-                >
-                  <span>Verification Link (Placeholder)</span>
-                  <ExternalLinkIcon size={13} />
-                </Button>
-              )}
             </div>
           </div>
         ))}

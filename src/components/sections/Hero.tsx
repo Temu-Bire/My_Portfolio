@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import Image from "next/image";
 import { profileData } from "@/data/profile";
 import { Button } from "@/components/ui/Button";
@@ -9,7 +9,6 @@ import {
   LinkedinIcon,
   MailIcon,
   ArrowRightIcon,
-  CodeIcon,
 } from "@/components/ui/Icons";
 
 export function Hero() {

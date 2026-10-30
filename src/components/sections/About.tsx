@@ -1,20 +1,8 @@
-import React from "react";
 import { profileData } from "@/data/profile";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import {
-  GraduationCapIcon,
-  CodeIcon,
-  LayersIcon,
-  SmartphoneIcon,
-} from "@/components/ui/Icons";
 
 export function About() {
-  const statIcons = [
-    <GraduationCapIcon key="cs" size={24} className="text-indigo-600" />,
-    <CodeIcon key="exp" size={24} className="text-indigo-600" />,
-    <LayersIcon key="proj" size={24} className="text-indigo-600" />,
-    <SmartphoneIcon key="stack" size={24} className="text-indigo-600" />,
-  ];
+
 
   return (
     <section id="about" aria-label="About Me" className="py-16 md:py-24 border-t border-slate-200/80">

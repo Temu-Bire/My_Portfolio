@@ -1,4 +1,3 @@
-import React from "react";
 import { experienceData } from "@/data/experience";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CheckCircleIcon, CodeIcon } from "@/components/ui/Icons";

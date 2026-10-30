@@ -13,15 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Temesgen Birhenu | Computer Science Student & Full-Stack Developer",
+  title: "Temesgen Birhenu | Full-Stack Developer",
   description:
     "Portfolio of Temu Bire, a fourth-year Computer Science student and developer building full-stack web, mobile, and AI-powered applications.",
   keywords: [
     "Temesgen Birhenu",
-    "Computer Science",
     "Full-Stack Developer",
-    "React",
-    "Next.js",
+    "Fronte-end Developer",
+    "Back-end Developer",
     "TypeScript",
     "FastAPI",
     "Python",
@@ -34,9 +33,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://my-portfolio-temubre1996-8124s-projects.vercel.app/",
-    title: "Temesgen Birhenu | Computer Science Student & Full-Stack Developer",
+    title: "Temesgen Birhenu |  Full-Stack Developer",
     description:
-      "Portfolio of Temesgen Birhenu, a fourth-year Computer Science student and developer building practical software across web, mobile, and AI.",
+      "Portfolio of Temesgen Birhenu, Full-Stack developer building practical software across web, mobile, and AI.",
     siteName: "Temesgen Birhenu Portfolio",
   },
   verification: {
