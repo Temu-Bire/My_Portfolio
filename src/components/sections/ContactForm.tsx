@@ -148,10 +148,8 @@ export function ContactForm({ fallbackEmail }: { fallbackEmail: string }) {
           role="alert"
           className="rounded-lg border border-red-200 bg-red-50 px-3.5 py-2.5 text-sm text-red-800"
         >
-          {errorMessage} You can also email me at{" "}
-          <a href={`mailto:${fallbackEmail}`} className="font-semibold underline">
-            {fallbackEmail}
-          </a>.
+          {errorMessage} 
+         
         </p>
       )}
 

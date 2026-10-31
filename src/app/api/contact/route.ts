@@ -1,16 +1,16 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
-// Server-side validation
+// Server-side validation schema
 const contactSchema = z.object({
-    name: z
+  name: z
     .string()
     .trim()
     .min(2, "Name must contain at least 2 characters.")
     .max(100, "Name must not exceed 100 characters.")
     .regex(
-        /^[\p{L}\p{M}]+(?:[ '-][\p{L}\p{M}]+)*$/u,
-        "Name can only contain letters, spaces, hyphens and apostrophes.",
+      /^[\p{L}\p{M}]+(?:[ '-][\p{L}\p{M}]+)*$/u,
+      "Please enter a valid name.",
     ),
   email: z.string().trim().email("Please enter a valid email address.").max(200),
 
@@ -57,6 +57,36 @@ export async function POST(request: Request) {
   if (website) {
     return NextResponse.json({ ok: true });
   }
+
+  // --- Abstract API Email Verification ---
+  const abstractApiKey = process.env.ABSTRACT_API_KEY;
+
+  if (abstractApiKey) {
+    try {
+      const abstractUrl = `https://emailvalidation.abstractapi.com/v1/?api_key=${abstractApiKey}&email=${email}`;
+      const abstractRes = await fetch(abstractUrl);
+
+      // Only evaluate if the API request was successful
+      if (abstractRes.ok) {
+        const abstractData = await abstractRes.json();
+
+        // Only block if it is explicitly UNDELIVERABLE or a known disposable/fake email
+        const isUndeliverable = abstractData.deliverability === "UNDELIVERABLE";
+        const isDisposable = abstractData.is_disposable_email === true;
+
+        if (isUndeliverable || isDisposable) {
+          return NextResponse.json(
+            { error: "Please enter a valid and real email address!" },
+            { status: 400 },
+          );
+        }
+      }
+    } catch (err) {
+      console.error("Abstract API verification failed:", err);
+      // Fallback: allows the request to continue if the API has a network glitch or limit issue
+    }
+  }
+  // ---------------------------------------
 
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_TO_EMAIL;
